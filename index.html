@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Relatórios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Relatórios</h1>
+        <div class="section">
+            <label>*Data:*</label>
+            <span id="data"></span>
+        </div>
+        <div class="section">
+            <label>*Supervisor:*</label>
+            <span>Taynara</span>
+        </div>
+        <div class="section">
+            <label>*Nome da loja:*</label>
+            <span>Bangu</span>
+        </div>
+        <div class="section">
+            <label>*Gerente de loja:*</label>
+            <span>Fernando</span>
+        </div>
+        
+        <h2>Vendas</h2>
+        <div class="section">
+            <label>*Vendas A58:*</label>
+            <br>
+            preto
+            <select id="vendasA58Preto"></select>
+            verde
+            <select id="vendasA58Verde"></select>
+        </div>
+        <div class="section">
+            <label>*Vendas A79:*</label>
+            <br>
+            preto
+            <select id="vendasA79Preto"></select>
+            roxo
+            <select id="vendasA79Roxo"></select>
+        </div>
+        <div class="section">
+            <label>*Vendas Reno11F:*</label>
+            <br>
+            verde
+            <select id="vendasReno11FVerde"></select>
+            lilas
+            <select id="vendasReno11FLilas"></select>
+        </div>
+        
+        <h2>Estoque</h2>
+        <div class="section">
+            <label>*Estoque A58:*</label>
+            <br>
+            preto
+            <select id="estoqueA58Preto"></select>
+            verde
+            <select id="estoqueA58Verde"></select>
+        </div>
+        <div class="section">
+            <label>*Estoque A79:*</label>
+            <br>
+            preto
+            <select id="estoqueA79Preto"></select>
+            roxo
+            <select id="estoqueA79Roxo"></select>
+        </div>
+        <div class="section">
+            <label>*Estoque Reno11F:*</label>
+            <br>
+            verde
+            <select id="estoqueReno11FVerde"></select>
+            lilas
+            <select id="estoqueReno11FLilas"></select>
+        </div>
+        
+        <h2>Vendas Totais</h2>
+        <div class="section">
+            <label>*Vendas totais do dia:*</label>
+            <select id="vendasTotaisDia"></select>
+        </div>
+        <div class="section">
+            <label>*Vendas neste mês:*</label>
+            <select id="vendasNesteMes"></select>
+        </div>
+        <div class="section">
+            <label>*Tarefas este mês:*</label>
+            <select id="tarefasNesteMes"></select>
+        </div>
+        <div class="section">
+            <label>*Taxa de conclusão:*</label>
+            <input type="text" id="taxaConclusao" placeholder="11%">
+        </div>
+
+        <h2>Vendas Samsung no Dia</h2>
+        <div class="section">
+            <label>*A15:*</label>
+            <select id="vendasA15"></select>
+        </div>
+        <div class="section">
+            <label>*A05:*</label>
+            <select id="vendasA05"></select>
+        </div>
+        <div class="section">
+            <label>*A25:*</label>
+            <select id="vendasA25"></select>
+        </div>
+        <div class="section">
+            <label>*A35:*</label>
+            <select id="vendasA35"></select>
+        </div>
+        <div class="section">
+            <label>*A55:*</label>
+            <select id="vendasA55"></select>
+        </div>
+        <div class="section">
+            <label>*S23:*</label>
+            <select id="vendasS23"></select>
+        </div>
+
+        <h2>Vendas Motorola no Dia</h2>
+        <div class="section">
+            <label>*G34:*</label>
+            <select id="vendasG34"></select>
+        </div>
+        <div class="section">
+            <label>*G24:*</label>
+            <select id="vendasG24"></select>
+        </div>
+        <div class="section">
+            <label>*G54:*</label>
+            <select id="vendasG54"></select>
+        </div>
+        <div class="section">
+            <label>*G84:*</label>
+            <select id="vendasG84"></select>
+        </div>
+        <div class="section">
+            <label>*Edge40:*</label>
+            <select id="vendasEdge40"></select>
+        </div>
+
+        <h2>Outros</h2>
+        <div class="section">
+            <label>*Iphone 12:*</label>
+            <select id="vendasIphone12"></select>
+        </div>
+        <div class="section">
+            <label>*Iphone 13:*</label>
+            <select id="vendasIphone13"></select>
+        </div>
+        <div class="section">
+            <label>*Outros:*</label>
+            <select id="vendasOutros"></select>
+        </div>
+
+        <h2>Razões para 0 vendas ou outras necessidades de aconselhamento e suporte de vendas:</h2>
+        <textarea id="motivoVendas" rows="4" cols="50">todos os clientes atendidos com muita resistência. Nenhum conhecia a marca e não sentia confiança ao comprar o produto.</textarea>
+
+        <button onclick="gerarRelatorio()">Gerar Relatório</button>
+        
+        <h2>Resultado:</h2>
+        <textarea id="resultado" rows="20" cols="70"></textarea>
+        <button onclick="copiarRelatorio()">Copiar Relatório</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
